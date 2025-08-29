@@ -15,17 +15,23 @@ Kết quả được gửi real-time lên Adafruit IO để theo dõi qua dashbo
 
 ⚡ Sơ đồ kết nối phần cứng
 Thiết bị	ESP32 Pin	Ghi chú
-Buzzer (+)	GPIO25	Chân tín hiệu
-Buzzer (-)	GND	Mass
-DHT22 VCC	3.3V	Nguồn 3.3V
-DHT22 GND	GND	Mass
-DHT22 DATA	GPIO14	Có trở kéo lên 10kΩ
-MQ-2 VCC	5V	Nguồn 5V
-MQ-2 GND	GND	Mass
-MQ-2 AO	GPIO34	Ngõ analog
-Flame VCC	5V	Nguồn 5V
-Flame GND	GND	Mass
-Flame DO	GPIO33	Ngõ digital
+ESP 32s
+------
+GPIO25  -----> Buzzer (+)
+GND     -----> Buzzer (-)
+        ESP32
+   ----------------
+   3.3V  -------- DHT22 VCC
+   GND   -------- DHT22 GND
+   GPIO14-------- DHT22 DATA (10kΩ lên 3.3V)
+
+   5V    -------- MQ-2 VCC
+   GND   -------- MQ-2 GND
+   GPIO34-------- MQ-2 AO
+
+   5V    -------- Flame VCC
+   GND   -------- Flame GND
+   GPIO33-------- Flame DO
 
 📍 Sơ đồ khối:
 
