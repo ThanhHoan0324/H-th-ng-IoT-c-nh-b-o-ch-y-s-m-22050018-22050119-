@@ -15,7 +15,6 @@ Kết quả được gửi real-time lên Adafruit IO để theo dõi qua dashbo
 
 ⚡ Sơ đồ kết nối phần cứng
 Thiết bị	ESP32s 	
-        ESP32s
    ----------------
    3.3V  -------- DHT22 VCC
    GND   -------- DHT22 GND
