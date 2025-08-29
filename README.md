@@ -14,8 +14,7 @@ Buzzer: cảnh báo tại chỗ
 Kết quả được gửi real-time lên Adafruit IO để theo dõi qua dashboard.
 
 ⚡ Sơ đồ kết nối phần cứng
-Thiết bị	ESP32 Pin	
-Ghi chú
+Thiết bị	ESP32s 	
         ESP32s
    ----------------
    3.3V  -------- DHT22 VCC
@@ -29,10 +28,9 @@ Ghi chú
    5V    -------- Flame VCC
    GND   -------- Flame GND
    GPIO33-------- Flame DO
-ESP 32s
-------
-GPIO25  -----> Buzzer (+)
-GND     -----> Buzzer (-)
+
+   GPIO25  -----> Buzzer (+)
+   GND     -----> Buzzer (-)
 📍 Sơ đồ khối:
 
 Buzzer và DHT22 bên trái ESP32
